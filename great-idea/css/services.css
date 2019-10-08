@@ -63,17 +63,15 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 /*  my code from here down */
-*{
-	background-color: darkgray;
-}
 
 
 .container{
-    padding: 5%;
+    padding: 2%;
 	max-width: 60%;
 	margin:0 auto;
     border: solid 1px red;
 }
+
 .menu-bar{
     display: flex;
     align-items: flex-start;
@@ -82,6 +80,7 @@ h1, h2, h3, h4, h5 {
     margin-top: 5px;
     margin-bottom:5px;
 }
+
 .menu-bar a{
     color: gray;
     text-decoration: none;
@@ -89,52 +88,69 @@ h1, h2, h3, h4, h5 {
 
 
 header{
-    border: solid green 2px;
+    /* border: solid green 2px; */
     margin-top: 2%;
     margin-bottom:5px;
 }
+
 header img{
     width: 100%;
 }
+
 header h1{
     padding-top: 2%;
     font-size: 50px;
 }
 
-.content{
+#details{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-top:solid black 2px;
-    border-bottom:solid black 2px;
-    margin-top: 5px;
-    margin-bottom:5px;
-    padding-top: 10px;
-    padding-bottom:10px;
-}
-.content-box-l{
-    
-    width: 48%;
-    height: 32%;
-    border:solid black 2px;
-
-}
-.content-box-r{
-    
-    width: 48%;
-    height: 32%;
-    border:solid black 2px;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+    flex-shrink: 1;
+    justify-content: space-between;
 }
 
-.bottom-content{
+#details .detail{
     display: flex;
-    border: solid black 2px;
-    margin-top: 5px;
-    margin-bottom:5px;
-    padding-top: 10px;
-    padding-bottom:10px;
+    flex-basis: calc(48%); 
+    flex-direction: column; 
+    border: solid black 1px;
+    background-color: lightgray;
+    padding: 2%;
+    margin-bottom: 30px;
 }
+
+.detail button{
+     width: 30%;
+     text-align: center;
+     margin-top:4%;
+     border-radius: 5px;
+     background-color: rgb(233, 227, 227);
+    padding: 2%;
+ }
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    
+}
+
+.bottom-content .facts{
+    width: 45%;
+    display:inline-block;
+   
+    
+}
+.bottom-content .things{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 footer{
     text-align: center;
     margin-top:50px;
