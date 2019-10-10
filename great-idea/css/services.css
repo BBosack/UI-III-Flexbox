@@ -91,6 +91,7 @@ header{
     /* border: solid green 2px; */
     margin-top: 2%;
     margin-bottom:5px;
+    line-height: 1.2;
 }
 
 header img{
@@ -129,7 +130,7 @@ header h1{
      margin-top:4%;
      border-radius: 5px;
      background-color: rgb(233, 227, 227);
-    padding: 2%;
+     padding: 2%;
  }
 
 .bottom-content {
@@ -141,10 +142,7 @@ header h1{
 }
 
 .bottom-content .facts{
-    width: 45%;
-    display:inline-block;
-   
-    
+    width: 45%;   
 }
 .bottom-content .things{
     margin-top: 20px;
